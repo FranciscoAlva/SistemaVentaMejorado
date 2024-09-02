@@ -9,6 +9,8 @@ import java.sql.SQLException;
  * @author maygr
  */
 public class Conexion {
+    
+    Connection con;
 
     //conexion local
     public static Connection conectar (){    

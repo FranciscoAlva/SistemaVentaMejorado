@@ -19,7 +19,7 @@ public class Ctrl_Usuario {
 
         boolean respuesta = false;
         Connection cn = Conexion.conectar();
-        String sql = "SELECT * FROM usuarios WHERE usuario = '" + objeto.getUsuario() + "' AND password = '" + objeto.getPassword() + "'";
+         String sql = "SELECT * FROM usuario WHERE usuario = '" + objeto.getUsuario() + "' AND password = '" + objeto.getPassword() + "'";
         Statement st;
         try {
             st = cn.createStatement();
@@ -30,10 +30,7 @@ public class Ctrl_Usuario {
         } catch (SQLException e) {
             System.out.println("ERROR AL INICIAR SESION");
             JOptionPane.showMessageDialog(null, "ERROR AL INICIAR SESION");
-        }
-        
+        }        
         return respuesta;
-
     }
-
 }
