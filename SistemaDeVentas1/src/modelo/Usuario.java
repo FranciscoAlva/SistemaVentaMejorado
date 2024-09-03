@@ -16,6 +16,7 @@ public class Usuario {
     private String direccion;
     private String password;
     private String usuario;
+    private String rol;
     private int estado;
     
     //CONSTRUCTOR
@@ -29,6 +30,7 @@ public class Usuario {
         this.direccion = "";
         this.password = "";
         this.usuario = "";
+        this.rol="";
         this.estado = 0;        
     }
     
@@ -109,6 +111,16 @@ public class Usuario {
     public int getEstado() {
         return estado;
     }
+
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
+    }
+    
+    
 
     public void setEstado(int estado) {
         this.estado = estado;
